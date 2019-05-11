@@ -9,7 +9,7 @@ class QuizQuestion extends Component {
   }
 
   handleClick(buttonText) {
-    this.props.quiz_question.answer === buttonText ? this.setState({ incorrectAnwser: false }) : this.setState({ incorrectAnwser: true });
+    this.props.quiz_question.answer === buttonText ? this.setState({ incorrectAnswer: false }) : this.setState({ incorrectAnswer: true });
     return this.props.quiz_question.answer === buttonText ? this.props.showNextQuestionHandler() : null;
   }
 
